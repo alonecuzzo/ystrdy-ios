@@ -15,7 +15,13 @@
 		0627D1441A3E951700E8D6FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0627D1421A3E951700E8D6FC /* LaunchScreen.xib */; };
 		066082031A4898D4000C28B4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066081ED1A4898B6000C28B4 /* Nimble.framework */; };
 		066082041A4898D4000C28B4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066081FC1A4898C6000C28B4 /* Quick.framework */; };
-		066082071A489940000C28B4 /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066082061A489940000C28B4 /* TestSpec.swift */; };
+		0660820C1A48A39B000C28B4 /* AlamoFireWeatherServiceEntityGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660820B1A48A39B000C28B4 /* AlamoFireWeatherServiceEntityGatewaySpec.swift */; };
+		0660820F1A48A581000C28B4 /* WeatherServiceEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660820E1A48A581000C28B4 /* WeatherServiceEntityGateway.swift */; };
+		066082101A48A58E000C28B4 /* WeatherServiceEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660820E1A48A581000C28B4 /* WeatherServiceEntityGateway.swift */; };
+		066082121A48A63C000C28B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066082111A48A63C000C28B4 /* CoreLocation.framework */; };
+		066082131A48A64F000C28B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066082111A48A63C000C28B4 /* CoreLocation.framework */; };
+		066082151A48A919000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066082141A48A919000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift */; };
+		066082161A48A983000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066082141A48A919000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +104,10 @@
 		066081E51A4898B6000C28B4 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		066081F41A4898C6000C28B4 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		066082051A489940000C28B4 /* ystrdyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ystrdyTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		066082061A489940000C28B4 /* TestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpec.swift; sourceTree = "<group>"; };
+		0660820B1A48A39B000C28B4 /* AlamoFireWeatherServiceEntityGatewaySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamoFireWeatherServiceEntityGatewaySpec.swift; path = service/AlamoFireWeatherServiceEntityGatewaySpec.swift; sourceTree = "<group>"; };
+		0660820E1A48A581000C28B4 /* WeatherServiceEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherServiceEntityGateway.swift; path = service/WeatherServiceEntityGateway.swift; sourceTree = "<group>"; };
+		066082111A48A63C000C28B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		066082141A48A919000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamoFireWeatherServiceEntityGateway.swift; path = service/AlamoFireWeatherServiceEntityGateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066082131A48A64F000C28B4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066082121A48A63C000C28B4 /* CoreLocation.framework in Frameworks */,
 				066082031A4898D4000C28B4 /* Nimble.framework in Frameworks */,
 				066082041A4898D4000C28B4 /* Quick.framework in Frameworks */,
 			);
@@ -142,6 +153,7 @@
 		0627D1331A3E951700E8D6FC /* ystrdy */ = {
 			isa = PBXGroup;
 			children = (
+				0660820D1A48A566000C28B4 /* service */,
 				0627D1361A3E951700E8D6FC /* AppDelegate.swift */,
 				0627D13B1A3E951700E8D6FC /* ViewController.swift */,
 				0627D13D1A3E951700E8D6FC /* Main.storyboard */,
@@ -156,6 +168,7 @@
 		0627D1341A3E951700E8D6FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				066082111A48A63C000C28B4 /* CoreLocation.framework */,
 				0627D1351A3E951700E8D6FC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -164,11 +177,8 @@
 		0627D14C1A3E951800E8D6FC /* ystrdyTests */ = {
 			isa = PBXGroup;
 			children = (
-				066081F41A4898C6000C28B4 /* Quick.xcodeproj */,
-				066081E51A4898B6000C28B4 /* Nimble.xcodeproj */,
+				066082081A48A08D000C28B4 /* service */,
 				0627D14D1A3E951800E8D6FC /* Supporting Files */,
-				066082061A489940000C28B4 /* TestSpec.swift */,
-				066082051A489940000C28B4 /* ystrdyTests-Bridging-Header.h */,
 			);
 			path = ystrdyTests;
 			sourceTree = "<group>";
@@ -176,6 +186,9 @@
 		0627D14D1A3E951800E8D6FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				066082051A489940000C28B4 /* ystrdyTests-Bridging-Header.h */,
+				066081F41A4898C6000C28B4 /* Quick.xcodeproj */,
+				066081E51A4898B6000C28B4 /* Nimble.xcodeproj */,
 				0627D14E1A3E951800E8D6FC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -201,6 +214,23 @@
 				066082021A4898C6000C28B4 /* Quick-iOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		066082081A48A08D000C28B4 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				0660820B1A48A39B000C28B4 /* AlamoFireWeatherServiceEntityGatewaySpec.swift */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		0660820D1A48A566000C28B4 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				0660820E1A48A581000C28B4 /* WeatherServiceEntityGateway.swift */,
+				066082141A48A919000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift */,
+			);
+			name = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +402,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0660820F1A48A581000C28B4 /* WeatherServiceEntityGateway.swift in Sources */,
+				066082151A48A919000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift in Sources */,
 				0627D13C1A3E951700E8D6FC /* ViewController.swift in Sources */,
 				0627D13A1A3E951700E8D6FC /* ystrdy.xcdatamodeld in Sources */,
 				0627D1371A3E951700E8D6FC /* AppDelegate.swift in Sources */,
@@ -382,7 +414,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				066082071A489940000C28B4 /* TestSpec.swift in Sources */,
+				066082101A48A58E000C28B4 /* WeatherServiceEntityGateway.swift in Sources */,
+				0660820C1A48A39B000C28B4 /* AlamoFireWeatherServiceEntityGatewaySpec.swift in Sources */,
+				066082161A48A983000C28B4 /* AlamoFireWeatherServiceEntityGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
